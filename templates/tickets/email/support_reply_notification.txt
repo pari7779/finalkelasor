@@ -1,0 +1,6 @@
+پاسخ جدید به تیکت شما:
+
+{{ message.content }}
+
+مشاهده تیکت:
+http://example.com/tickets/{{ ticket.id }}/

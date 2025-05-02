@@ -1,0 +1,8 @@
+پاسخ جدید از پشتیبان:
+
+تیکت: {{ ticket.subject }}
+پاسخ:
+{{ message.content }}
+
+لینک مشاهده تیکت:
+{{ protocol }}://{{ domain }}/dashboard/tickets/{{ ticket.id }}/
