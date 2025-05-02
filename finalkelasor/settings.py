@@ -39,11 +39,11 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'USER',
-    'PROJECTS',
-    'PAYMENT',
-    'TICKET',
-    'WEBLOG',
-    'BOOTCAMP'
+    #'PROJECTS',
+    #'PAYMENT',
+    #'TICKET',
+    #'WEBLOG',
+    #'BOOTCAMP'
 
 ]
 
@@ -138,6 +138,9 @@ REST_FRAMEWORK = {
         'rest_framework.permissions.IsAuthenticated',  # این خط اطمینان می‌دهد که تنها کاربران احراز هویت‌شده به منابع دسترسی دارند.
     ],
 }
+
+AUTH_USER_MODEL = 'auth.User'
+
 from datetime import timedelta
 SIMPLE_JWT = {
     'ACCESS_TOKEN_LIFETIME': timedelta(minutes=5),  # عمر توکن دسترسی (Access Token) به مدت 5 دقیقه است.
@@ -153,5 +156,10 @@ SIMPLE_JWT = {
     'LEEWAY': 0,  # میزان انعطاف‌پذیری زمانی برای توکن‌ها. به طور پیش‌فرض صفر است.
 }
 
+# تنظیمات احراز هویت
+AUTH_USER_MODEL = 'auth.User'
 
 
+# تنظیمات کاوهنگار
+KAVEHNEGAR_API_KEY = 'your-api-key-here'
+KAVEHNEGAR_OTP_TEMPLATE = 'otp-template-name'
