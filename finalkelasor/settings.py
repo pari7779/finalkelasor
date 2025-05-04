@@ -11,7 +11,7 @@ https://docs.djangoproject.com/en/5.2/ref/settings/
 """
 
 from pathlib import Path
-
+import os
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -43,7 +43,8 @@ INSTALLED_APPS = [
     #'PAYMENT',
     #'TICKET',
     #'WEBLOG',
-    #'BOOTCAMP'
+    #'BOOTCAMP',
+    #'WEBLOG'
 
 ]
 
@@ -179,3 +180,7 @@ SUPPORT_EMAIL = 'support@yourdomain.com'
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MAX_ATTACHMENT_SIZE = 10 * 1024 * 1024  # 10MB
+
+# تنظیمات مدیا برای آپلود تصاویر
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')

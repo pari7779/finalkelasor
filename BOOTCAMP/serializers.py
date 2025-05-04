@@ -32,8 +32,8 @@ class BootcampSerializer(serializers.ModelSerializer):
 
     class BootcampRegistrationSerializer(serializers.ModelSerializer):
 
-    bootcamp_title = serializers.CharField(source='bootcamp.title', read_only=True)
-    user_phone = serializers.CharField(source='user.phone', read_only=True)
+     bootcamp_title = serializers.CharField(source='bootcamp.title', read_only=True)
+     user_phone = serializers.CharField(source='user.phone', read_only=True)
 
     class Meta:
         model = BootcampRegistration

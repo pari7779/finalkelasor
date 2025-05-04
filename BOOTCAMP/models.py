@@ -3,6 +3,7 @@ from django.contrib.auth import get_user_model  #دریافت مدل های کا
 from django.utils.translation import gettext_lazy as _  #قابلیت ترجمه ی عبارات
 from django.utils.translation import gettext_lazy as _
 User = get_user_model()
+from django.core.exceptions import ValidationError  # روش صحیح برای مدل‌ها
 
 class BootcampCategory(models.Model):
     name = models.CharField(max_length=100, verbose_name="نام دسته‌بندی")
